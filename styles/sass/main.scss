@@ -1,20 +1,4 @@
-h1{
-    color:red
-}
+@import "variables";
+@import "typography";
+@import "layout";
 
-.presentation{
-    font-weight:bold;
-    color:blue;
-    margin-top: 50px;
-}
-
-div.parent{
-    color: white;
-
-    &:hover{
-        color: black;
-    }
-    .enfant{
-        color: rgb(255, 157, 0);
-    }
-}

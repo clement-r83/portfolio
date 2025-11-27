@@ -1,19 +1,8 @@
-h1 {
-  color: red;
+body {
+  font: 19px/23px Montserrat, sans-serif;
 }
 
-.presentation {
-  font-weight: bold;
-  color: blue;
-  margin-top: 50px;
-}
-
-div.parent {
-  color: white;
-}
-div.parent:hover {
-  color: black;
-}
-div.parent .enfant {
-  color: rgb(255, 157, 0);
+body {
+  background-color: #000000;
+  color: rgb(255, 255, 255);
 }/*# sourceMappingURL=main.css.map */

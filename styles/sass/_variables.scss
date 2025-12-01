@@ -1,5 +1,13 @@
-$primary: rgb(201, 183, 26);
-$secondary: rgb(196, 78, 39);
+$primary: rgb(201, 26, 26);
+$secondary: rgb(110, 110, 110);
 $dark:#000000;
-$gray: rgb(108, 105, 105);
+$gray: rgb(181, 181, 181);
 $white: rgb(255, 255, 255);
+
+$colors: (
+    "primary": $primary,
+    "secondary": $secondary,
+    "dark": $dark,
+    "gray": $gray,
+    "white": $white,
+);

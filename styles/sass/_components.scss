@@ -1,30 +1,86 @@
 .section-display {
     display: flex;
+    margin-bottom: 10rem;
+
+    flex-direction: column;
+
+@media screen and (min-width: 768px){
+    &.right-text-content {
+        flex-direction: row-reverse;
+        .illustration {
+            padding-right: 5rem;
+            }
+        .text-content {
+            text-align: center;
+            margin: 5rem;
+            }   
+            .paragraph {
+                margin-bottom: 70px;
+            }
+    }
+            
+    
+    &.left-text-content {
+        flex-direction: row;
+        .illustration {
+            padding-left: 5rem;
+        }
+    }
+}  
 
     .text-content{
         flex:1;
         .title{
+            font-size: 30px;
+            @media screen and (min-width: 768px){
             font-size: 70px;
+            }
             line-height: 1.1;
             font-weight: 700;
         }
         .paragraph {
-        font-size: 30px;
-        line-height: 1.1;
+            font-size:15px;
+            @media screen and (min-width: 768px){
+            font-size: 30px;
+            line-height:40px;
+            }
+            
         } 
     }
 
     .illustration{
         flex:1;
+        padding:20px;
+        margin-top: 50px;
         img{
         max-width: 100%;
         display: block;
         margin: auto;
+
         }
     }
+
+
 
     .action-div{
 
     }
 
+}
+
+.competences-icons {
+    display: flex;
+    justify-content: center; 
+    gap: 30px;
+    font-size: 40px;
+    color: $primary;
+    i{
+        transition: all 0.8s ease;
+        
+        &:hover{
+            cursor: pointer;
+            color: $secondary;
+            transform: scale(1.2); 
+        }    
+    }
 }

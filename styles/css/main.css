@@ -18,6 +18,11 @@ header.header-website {
   margin-bottom: 15px;
 }
 
+picture.emoji-gif img {
+  width: 1em;
+  height: 1em;
+}
+
 .section-display {
   display: flex;
   margin-bottom: 10rem;
@@ -157,7 +162,7 @@ header.header-website {
 }
 
 .animate-fusée {
-  transition: all 1s ease;
+  transition: all 2s ease;
   display: inline-block;
 }
 .animate-fusée:hover {

@@ -1,0 +1,57 @@
+.header-website{
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: $dark;
+    .navbar{
+        @include justify-between;
+        padding-top: 20px;
+        padding-bottom: 10px;
+
+        .menu{
+            .menu-input{
+                display: none;
+                &:checked ~ .dropdown-menu{
+                    max-height: 100vh;
+                }
+        }
+        @media screen and (min-width: 768px){
+                    .menu-input-label{
+                    display: none;
+                    }
+                }
+            .dropdown-menu{
+                transition: max-height ease-out 1s;
+                max-height: 0;
+                background-color: $dark;
+                position: absolute;
+                left: 0; 
+                overflow: hidden;
+                width: 100%;
+                top:100%;
+
+                .nav-links{
+                    padding: 0px;
+                    .nav-link{
+                        display: block;
+                        padding: 10px;                    
+                        text-align: center;
+                        a{
+                            color: $white;
+                            text-decoration: none;
+                        }
+                    } 
+                }
+                        @media screen and (min-width: 768px){
+                        max-height: 100vh;
+                        position: relative;
+                        .nav-links{
+                            display: flex;
+                            justify-content:space-between;
+                            padding: 0px;
+                        }
+                    }
+            }
+        }
+    }
+}

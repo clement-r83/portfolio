@@ -103,6 +103,17 @@ picture.emoji-gif img {
   transform: scale(1.2);
 }
 
+.list-blog {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 32px;
+  margin-top: 60px;
+}
+.list-blog .blog {
+  box-shadow: 1px 0 20px rgb(255, 255, 255);
+  padding: 15px 30px;
+  border-radius: 5px;
+}
 #loader {
   position: fixed;
   top: 0;

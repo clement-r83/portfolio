@@ -85,6 +85,22 @@
     }
 }
 
+.list-blog {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(400px, 1fr));
+    gap: 32px;
+    margin-top: 60px;
+    .blog {
+        box-shadow: 1px 0 20px $white;
+        padding: 15px 30px;
+        border-radius:5px;
+
+        .link-blog{
+            
+        }
+    }
+}
+
 #loader {
     position: fixed;
     top: 0;

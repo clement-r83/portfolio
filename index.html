@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,16 +20,16 @@
                 <div class="dropdown-menu">
                     <ul class="nav-links">
                         <li class="nav-link">
-                            <a href="#accueil">Accueil</a>
+                            <a href="#Accueil">Accueil</a>
                         </li>                
                         <li class="nav-link">
-                            <a href="#compétences">Compétences</a>
+                            <a href="#stack-technique">Stack technique</a>
                         </li>
                         <li class="nav-link">
-                            <a href="#ab">À propos</a>
+                            <a href="#competences">Compétences</a>
                         </li>
                         <li class="nav-link">
-                            <a href="#projects">Projets</a>
+                            <a href="#blog">Blog</a>
                         </li>
                         <li class="nav-link">
                             <a href="#contact">Contact</a>
@@ -69,11 +69,11 @@
                     <img src="img/presentation1.png" alt="présentation de Riquelme clément" width="650px" height="650px">
                 </div>
         </section>
-        <section class="section-display right-text-content" id="compétences">
+        <section class="section-display right-text-content" id="stack-technique">
             <article class="text-content">
-                <h2 class="title">Mes compétences</h2>
-                <p class="paragraph">Voici les compétences que je maitrise</p>
-                <div class="competences-icons">
+                <h2 class="title">Stack technique</h2>
+                <p class="paragraph">Voici les technologies de j'utilise au quotidien:</p>
+                <div class="stack-technique-icons">
                     <i class="fa-brands fa-html5"></i>
                     <i class="fa-brands fa-css3-alt"></i>
                     <i class="fa-brands fa-js"></i>
@@ -85,60 +85,105 @@
                 </div>
             </article>
                 <div class="illustration">
-                    <img src="img/competences1.png" alt="présentation de Riquelme clément">
+                    <img src="img/stack-technique.png" alt="présentation de Riquelme clément">
                 </div>
-        </section>
-                <section class="section-display left-text-content">
+            </section>
+
+        <section class="section-display left-text-content" id="competences">
             <article class="text-content">
                 <h2 class="title">Mes compétences</h2>
-                <p class="paragraph">Voici les compétences que je maitrise</p>
-                <div class="competences-icons">
-                    <i class="fa-brands fa-html5"></i>
-                    <i class="fa-brands fa-css3-alt"></i>
-                    <i class="fa-brands fa-js"></i>
-                    <i class="fa-brands fa-react"></i>
-                    <i class="fa-brands fa-sass"></i>
+                <p class="paragraph">Voici les technologie que je maitrises :</p>
+                <div class="competences-bars">
+                    <div class="competence-bar">
+                        <div class="competence-bar-title">HTML5</div>
+                        <div class="competence-bar-bar">
+                            <div class="competence-bar-bar-fill" style="width: 90%;"></div>
+                    </div>
                 </div>
-                <div class="socials">
-                <!--socials icons -->
+                <div class="competences-bars">
+                    <div class="competence-bar">
+                        <div class="competence-bar-title">CSS</div>
+                        <div class="competence-bar-bar">
+                            <div class="competence-bar-bar-fill" style="width: 85%;"></div>
+                    </div>
+                </div>
+                <div class="competences-bars">
+                    <div class="competence-bar">
+                        <div class="competence-bar-title">JS</div>
+                        <div class="competence-bar-bar">
+                            <div class="competence-bar-bar-fill" style="width: 80%;"></div>
+                    </div>
+                </div>
+                <div class="competences-bars">
+                    <div class="competence-bar">
+                        <div class="competence-bar-title">REACT</div>
+                        <div class="competence-bar-bar">
+                            <div class="competence-bar-bar-fill" style="width: 80%;"></div>
+                    </div>
+                </div>
+                <div class="competences-bars">
+                    <div class="competence-bar">
+                        <div class="competence-bar-title">SASS</div>
+                        <div class="competence-bar-bar">
+                            <div class="competence-bar-bar-fill" style="width: 88%;"></div>
+                    </div>
                 </div>
             </article>
                 <div class="illustration">
-                    <img src="img/competences1.png" alt="présentation de Riquelme clément">
+                    <img src="img/competences.png" alt="présentation de Riquelme clément">
                 </div>
         </section>
+
         <section class="section-display full-text-content" id="blog">
             <div class="text-content">
-                <h2 class="title">blog</h2>
+                <h2 class="title">Blog</h2>
                 <p>Dans la suite de cet article, nous allons modifier l'exemple précédent pour obtenir des informations supplémentaires </p>
                 <section class="list-blog">
+                <a href="https://google.com">
                     <article class="blog">
                         <h4>blog 1</h4>
                         <p>Dans la suite de cet article, nous allons modifier l'exemple précédent pour obtenir des informations supplémentaires sur chaque événement d'animation lorsqu'il se produit afin de mieux voir comment cela fonctionne</p>
-                        <a href="google.com" class="link-blog">-></a>
+                        <div href="google.com" class="link-blog"><i class="fa-solid fa-arrow-right"></i></div>
                     </article>
+                </a>
+                <a href="https://google.com">
                     <article class="blog">
                         <h4>blog 1</h4>
                         <p>Dans la suite de cet article, nous allons modifier l'exemple précédent pour obtenir des informations supplémentaires sur chaque événement d'animation lorsqu'il se produit afin de mieux voir comment cela fonctionne</p>
-                        <a href="google.com" class="link-blog">-></a>
+                        <div href="google.com" class="link-blog"><i class="fa-solid fa-arrow-right"></i></div>
                     </article>
+                </a>
                 </section>
             </div>
         </section>
     </main>
     <footer>
-        footer
-    </footer>
-    <div id="loader">
-        <div class="loader">
-
+        <div class="credits">
+            <span> Made with 
+                <picture>
+                    <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/2764_fe0f/512.webp" type="image/webp">
+                    <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2764_fe0f/512.gif" alt="❤" width="32" height="32">
+                </picture> by Riquelme Clément </span>
+            <span>© 2024 Riquelme Clément. Tous droits réservés.
+            </span>
+            <span>Contact: c.riquelme83390@gmail.com
+            </span>
         </div >
-    </div>    
+    </footer>
+    <div id="contact">
+        <div class="loader">
+        </div>
+    </div>
+    <a id="Gototop" class="btn btn-primary" href="#">
+        <picture>
+            <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/261d_1f3fc/512.webp" type="image/webp">
+            <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/261d_1f3fc/512.gif" alt="☝" width="32" height="32">
+        </picture>
+    </a>       
 </body>
 </html>
 
 
-26.31 6/7
 
 
 

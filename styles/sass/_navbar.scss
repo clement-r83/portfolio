@@ -37,8 +37,8 @@
                         padding: 10px;                    
                         text-align: center;
                         a{
-                            color: $white;
-                            text-decoration: none;
+                            @include link-as-text;
+                            
                         }
                     } 
                 }

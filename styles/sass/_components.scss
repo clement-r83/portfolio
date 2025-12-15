@@ -1,8 +1,7 @@
 .section-display {
     display: flex;
-    margin-bottom: 10rem;
-
     flex-direction: column;
+    margin-bottom: 5rem;
 
 @media screen and (min-width: 768px){
     &.right-text-content {
@@ -68,7 +67,7 @@
 
 }
 
-.competences-icons {
+.stack-technique-icons {
     display: flex;
     justify-content: center; 
     gap: 30px;
@@ -90,13 +89,46 @@
     grid-template-columns: repeat(auto-fill,minmax(400px, 1fr));
     gap: 32px;
     margin-top: 60px;
+    a{
+        @include link-as-text;
+    }
+
     .blog {
         box-shadow: 1px 0 20px $white;
         padding: 15px 30px;
         border-radius:5px;
+        position: relative;
+
+        h4, p{
+            position: relative;
+            z-index: 6;
+            background-color: transparent;
+        }
+
+        &:hover{
+            cursor: pointer;
+            .link-blog{
+                color: $secondary;
+                width: calc(100% - 25px);
+                height: calc(100% - 25px);
+                border-radius: 5px;
+            }
+        }
 
         .link-blog{
-            
+            text-align: right;
+            display: block;
+            background-color: $primary;
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: 10px 10px 15px 15px;
+            border-bottom-left-radius: 100%;
+            transition: 0.5s ease-out;
+            width: 15px;
+            height: 20px;
+            opacity: 0.8;
+            z-index: 5;
         }
     }
 }
@@ -122,3 +154,28 @@
         animation: spin 0.5s linear infinite;
     }
 }
+
+.competences-bars {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    .competence-bar {
+
+        .competence-bar-bar{
+            background-color: $white;
+            width: 100%;
+            height: 30px;
+            border-radius: 10px;
+            border: 1px solid $secondary;
+            .competence-bar-bar-fill{
+                height: 100%;
+                background-color: $primary;
+                border-radius: 10px;
+                animation: showGrowth 1s ease infinite alternate;
+            }
+
+        }
+    }
+}
+
+
